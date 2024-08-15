@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        
+        <div class="full-img" id="fullimgbox">
+            <img src="img/DSC_0001.JPG" id="fullimg">
+            <span onclick="closefullimg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            
+            <img src="img/1000039040.jpg" onclick="openfullimg(this.src)">
+            <img src="img/IMG-20221216-WA0032.jpg" onclick="openfullimg(this.src)">
+            <img src="img/IMG-20240310-WA0002.jpg" onclick="openfullimg(this.src)">
+            <img src="img/IMG-20240622-WA0009.jpg" onclick="openfullimg(this.src)">
+            <img src="img/IMG-20240804-WA0001.jpg" onclick="openfullimg(this.src)">
+            <img src="img/WhatsApp Image 2024-08-14 at 22.42.30_cc1308c0.jpg" onclick="openfullimg(this.src)">
+            <img src="img/WhatsApp Image 2024-08-14 at 22.42.31_96234d14.jpg" onclick="openfullimg(this.src)">
+            <img src="img/IMG-10010.jpg" onclick="openfullimg(this.src)">
+        </div>
+        <script>
+            var fullimgbox = document.getElementById("fullimgbox");
+            var fullimg = document.getElementById("fullimg");
+            function openfullimg(pic){
+                fullimgbox.style.display = "flex";
+                fullimg.src = pic;
+            }
+
+            function closefullimg(){
+                fullimgbox.style.display = "none";
+            }
+        </script>
+        
+   </body>
+</html>
